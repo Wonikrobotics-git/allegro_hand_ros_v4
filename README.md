@@ -21,7 +21,7 @@ At this point no effort has been made to be backwards compatible. Some of the no
 ## Launch file instructions:
 There is now a single file, allegro_hand.launch that starts the hand. It takes many arguments, but at a minimum you must specify the handedness:
 
- roslaunch allegro_hand_controllers allegro_hand.launch HAND:=right
+      roslaunch allegro_hand_controllers allegro_hand.launch HAND:=right
 Optional (recommended) arguments:
 
       NUM:=0|1|...
