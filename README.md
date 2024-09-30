@@ -60,11 +60,11 @@ Note that you should also specify the hand `NUM` parameter in the viz launch if 
       - zero.yaml: Offset and servo directions for each of the 16 joints, and some meta information about the hand.
       - zero_files/ Zero files for all hands.
 - bhand Library files for the predefined grasps, available in 32 and 64 bit versions. 64 bit by default, update symlink for 32 bit.
+
 Note on polling (from Wonik Robotics): The preferred sampling method is utilizing the Hand's own real time clock running @ 333Hz by polling the CAN communication (polling = true, default). In fact, ROS's interrupt/sleep combination might cause instability in CAN communication resulting unstable hand motions.
 
 ## Useful Links
-Allegro Hand wiki.
-ROS wiki for original package.
+[Allegro Hand Forum.](https://allegrohand.com/forum)
 
 ## Controlling More Than One Hand
 When running more than one hand using ROS, you must specify the number of the hand when launching.
