@@ -47,21 +47,21 @@ Note that you should also specify the hand `NUM` parameter in the viz launch if 
 - allegro_hand_driver Driver for talking with the allegro hand.
 - allegro_hand_controllers Different nodes that actually control the hand. The AllegroNode class handles all the generic driver comms, each class then implements computeDesiredTorque differently (and can have various topic subscribers):
   
-      - grasp: Apply various pre-defined grasps, including gravity compensation.
-      - pd: Joint space control: save and hold positions.
-      - velsat: velocity saturation joint space control (supposedly experimental)
-      - torque: Direct torque control.
-      - sim: Just pass desired joint states through as current joint states.
+  - grasp: Apply various pre-defined grasps, including gravity compensation.
+  - pd: Joint space control: save and hold positions.
+  - velsat: velocity saturation joint space control (supposedly experimental)
+  - torque: Direct torque control.
+  - sim: Just pass desired joint states through as current joint states.
   
 - allegro_hand_description xacro descriptions for the kinematics of the hand, rviz configuration and meshes.
 - allegro_hand_keyboard Node that sends the commanded grasps. All commands are available with the grasp controller, only some are available with the other controllers.
 - allegro_hand_parameters All necessary parameters for loading the hand:
   
-      - gains_pd.yaml: Controller gains for PD controller.
-      - gains_velSat.yaml: Controller gains and parameters for velocity saturation controller.
-      - initial_position.yaml: Home position for the hand.
-      - zero.yaml: Offset and servo directions for each of the 16 joints, and some meta information about the hand.
-      - zero_files/ Zero files for all hands.
+  - gains_pd.yaml: Controller gains for PD controller.
+  - gains_velSat.yaml: Controller gains and parameters for velocity saturation controller.
+  - initial_position.yaml: Home position for the hand.
+  - zero.yaml: Offset and servo directions for each of the 16 joints, and some meta information about the hand.
+  - zero_files/ Zero files for all hands.
   
 - bhand Library files for the predefined grasps, available in 32 and 64 bit versions. 64 bit by default, update symlink for 32 bit.
 
