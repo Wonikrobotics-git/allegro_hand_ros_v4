@@ -79,7 +79,8 @@ When running more than one hand using ROS, you must specify the number of the ha
 ## Known Issues:
 While all parameters defining the hand's motor/encoder directions and offsets fall under the enumerated "allegroHand_#" namespaces, the parameter "robot_description" defining the kinematic structure and joint limits remains global. When launching a second hand, this parameter is overwritten. I have yet to find a way to have a separate enumerated "robot_decription" parameter for each hand. If you have any info on this, please advise.
 
-##Installing the PCAN driver
+## Installing the PCAN driver
+
 Before using the hand, you must install the pcan drivers. This assumes you have a peak-systems pcan to usb adapter.
 
 Install these packages
